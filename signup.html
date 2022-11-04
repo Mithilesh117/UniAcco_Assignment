@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign up{% endblock title %}
+
+{% block body %}
+
+<html>
+    <head>
+        <form action="signup" method="post">
+            {% csrf_token %}
+           
+              
+        <input type="text" id="form3Example1c" name="name"/><br>
+        <input type="text" id="form3Example3c" name="email" /><br>
+        <input type="password" id="form3Example4c" name="password"  /><br>
+        <input type="password2" id="form3Example4cd" name="password2" /><br>
+        <input type="submit">
+        </form>            
+    </head>
+    
+</html>
+{% endblock body  %}

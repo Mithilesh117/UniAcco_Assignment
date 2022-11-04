@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+ 
+  <h1 class="con text-center my-4">Contact Us</h1>
+  <form method="post" action="/contact">
+    {% csrf_token %}
+</div>
+
+<div class="container px-5 py-4">
+    <div class="mb-3">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="Name" name="name" placeholder="Enter Your Name">
+          </div>
+
+    <div>
+        <label for="email" class="form-label">Email address</label>
+        <input type="text" class="form-control" id="email" name="email"  placeholder="Enter Your Email Add">
+      </div>
+
+
+      <div>
+        <label for="Phone" class="form-label">Phone Number</label>
+        <input type="Phone" class="form-control" id="Phone" name="phone" placeholder="Phone Number">
+      </div>
+
+     <div class="mb-3">
+        <label for="comment" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
+      </div>
+
+      <div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+
+
+
+ {% endblock body  %} 

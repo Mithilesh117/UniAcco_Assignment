@@ -1,0 +1,1 @@
+hello this is a text.txt inside of static file here user can view the all stored data 
